@@ -142,9 +142,8 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="imgChange:" destination="Axh-XY-VfD" eventType="touchUpInside" id="Y3o-Qu-Eve"/>
                                     <action selector="loadChamp:" destination="Axh-XY-VfD" eventType="touchUpInside" id="rJ9-M5-fcq"/>
-                                    <segue destination="ale-6t-B9z" kind="show" id="6qZ-83-A2n"/>
+                                    <segue destination="eHe-VK-dh4" kind="show" identifier="segueCodeChampionnat" id="noI-4x-yOg"/>
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Gk9-rQ-VdU">
@@ -194,53 +193,34 @@
             </objects>
             <point key="canvasLocation" x="1727.536231884058" y="107.14285714285714"/>
         </scene>
-        <!--Root View Controller-->
-        <scene sceneID="3mU-II-ZdY">
+        <!--Liste Clubs Champ View Controller-->
+        <scene sceneID="LRA-lB-rL1">
             <objects>
-                <tableViewController id="ale-6t-B9z" customClass="ListeClubsChampViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fWV-YT-dt3">
+                <tableViewController id="eHe-VK-dh4" customClass="ListeClubsChampViewController" customModule="FootballApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ibF-ZE-IWT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="5R7-Fz-QvW">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="VHg-rv-IQU">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5R7-Fz-QvW" id="QN2-8U-5Xm">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VHg-rv-IQU" id="YDA-k1-Pnr">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="ale-6t-B9z" id="zvZ-aB-coq"/>
-                            <outlet property="delegate" destination="ale-6t-B9z" id="sln-lA-Zsu"/>
+                            <outlet property="dataSource" destination="eHe-VK-dh4" id="OYG-gv-csr"/>
+                            <outlet property="delegate" destination="eHe-VK-dh4" id="Oa4-k7-Cqp"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Gyx-Zd-j78"/>
+                    <navigationItem key="navigationItem" id="SEY-PX-49i"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kCr-HI-hrX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tzo-7r-Sdg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3374" y="94"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="neK-WP-ZQu">
-            <objects>
-                <navigationController id="cZt-cH-WX0" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yVw-ed-WbM">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="ale-6t-B9z" kind="relationship" relationship="rootViewController" id="CZ6-TW-XxV"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1KK-tC-LCD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2557" y="98"/>
+            <point key="canvasLocation" x="2561" y="107"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="6qZ-83-A2n"/>
-    </inferredMetricsTieBreakers>
 </document>

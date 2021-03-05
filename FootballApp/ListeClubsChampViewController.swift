@@ -9,10 +9,13 @@
 import Alamofire
 import UIKit
 
+
 class ListeClubsChampViewController: UITableViewController {
     
     
     var squads:[Squad] = []
+    var codeChamp: Int = 0
+    
     
     func listBeer(){
        /* AF.request("https://api.punkapi.com/v2/beers").response { response in
@@ -28,5 +31,11 @@ class ListeClubsChampViewController: UITableViewController {
             self.tableView.reloadData()
 
         }*/
+    }
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
     }
 }
