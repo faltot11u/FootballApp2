@@ -11,6 +11,7 @@ target 'FootballApp' do
   pod 'SwiftGifOrigin', '~> 1.7.0'
   pod "PromiseKit"
   pod 'Alamofire', '4.8'
+  pod 'SwiftyJSON', '~> 4.0'
 
   target 'FootballAppTests' do
     inherit! :search_paths

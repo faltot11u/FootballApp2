@@ -9,16 +9,13 @@
 import Alamofire
 import UIKit
 
-
-
-
 class ListeClubsChampViewController: UITableViewController {
     
     
     var squads:[Squad] = []
     
     func listBeer(){
-        AF.request("https://api.punkapi.com/v2/beers").response { response in
+       /* AF.request("https://api.punkapi.com/v2/beers").response { response in
 
             let json = try! JSON(data: response.data!)
 
@@ -30,6 +27,6 @@ class ListeClubsChampViewController: UITableViewController {
             }
             self.tableView.reloadData()
 
-        }
+        }*/
     }
 }
